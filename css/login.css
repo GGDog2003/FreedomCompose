@@ -1,5 +1,6 @@
 .loginEnterFrame{
    position: absolute;
-   margin-left: 50%;
-   margin-top: 2%;
+   width: 500px;height: 500px;
+   top: 12%;
+   right: 6%
 }

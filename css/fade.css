@@ -1,7 +1,7 @@
 .div {
-    position: relative;
-    left: 25%;
-
+    position: absolute;
+    left: 20%;
+    top: 200px;
     height: auto;
     width: auto;
 
@@ -18,13 +18,11 @@
 
 .fadeEnterButton{
     position: relative;
-
+    left: 25%;
     height: auto;
     width: auto;
-   
-
     animation: fadeEnterButton;
-    animation-delay: 0s;
+    animation-delay: 1s;
 }
 .fadeInRight {
     animation: fadeInRight;
@@ -36,17 +34,17 @@
 }
 
 .OneAnimated {
-    animation-duration: 0s;
+    animation-duration: 1.5s;
     animation-fill-mode: both;
 }
 @keyframes fadeInRight{
     0% {
         opacity: 0;
-        transform: translateX(0px);
+        transform: translateX(25%);
     }
     100% {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateX(0%);
     }
 }
 @keyframes fadeInLeft{
@@ -56,7 +54,7 @@
     }
     100% {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateX(40px);
     }
 }
 @keyframes fadeEnterButton{
