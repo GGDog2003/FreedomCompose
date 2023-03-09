@@ -17,14 +17,14 @@
 
 }
 .loginWhiteFrame {
-    border: 5px solid #d1d0d0;
+    border: 3px dashed #d1d0d0;
     position: absolute;
     z-index: 3;
     width: 430px;
     height: 400px;
     left: -160%;
     margin-top: 10%;
-
+    border-radius: 8px;
     background-color: white;
 
 
@@ -34,7 +34,7 @@
 .loginText{
   position: absolute;
    top: 25%;
-    left: 20%;
+    left: 8%;
     width: 380px;
 
     z-index: 4;
@@ -42,7 +42,7 @@
 }
 .loginUser{
     position: absolute;
-    width: 280px;
+    width: 350px;
     z-index: 5;
     height: 50px;
 
@@ -50,14 +50,14 @@
 }
 .loginPsd{
     position: absolute;
-    width: 280px;
+    width: 350px;
 
     margin-top: 25%;
 
 }
 .loginBtn{
     position: absolute;
-    width: 280px;
+    width: 350px;
     margin-top: 50%;
     height: 50px;
 }
@@ -83,6 +83,20 @@
 
 }
 .用户登录字体{
-    font-size: 30px;
-    font-family: 华文彩云;
+    position: absolute;
+    font-size: 25px;
+    font-weight: bolder;
+    top: 20px;
+    left: 20px;
+
+}
+.grayFrame{
+    position: absolute;
+    width: 380px;
+    height: 300px;
+    background-color: #efeded;
+    top: 18%;
+    left: 5%;
+    border-radius: 8px;
+    border: 3px dashed #d1d0d0;
 }
