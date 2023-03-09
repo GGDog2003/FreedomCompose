@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>登录</title>
@@ -12,25 +12,40 @@
     <script src="../JS/bootstrap-js/bootstrap.min.js"></script>
 </head>
 <body >
-    <div style="background-color: #0b2e13">
-        <img class="img-fluid loginEnterFrame" style="" src="../media/noteBackground.png" alt="用户密码框背景图片">
-    </div>
+<div>
+    <img style="position: absolute;right: 0" src="../media/loginBackGround.png">
+    <div class="loginEnterFrame" >
+        <img class="img-fluid " style="position: absolute" src="../media/noteBackground.png" alt="用户密码框背景图片">
 
-    <div class=" loginLogo">
-        <img src="../media/FreedomComposeLogo_Big.png" class="img-fluid" alt="">
-        <div class="loginWhiteFrame" >
-            <div class="loginText">
-                <label>*用户名
-                    <input style="background-image: url('../media/user.png');background-repeat: no-repeat" type="text" class="form-control loginUser" placeholder="     请输入用户名">
-                </label>
-                    <input style="background-image: url('../media/password.png');background-repeat: no-repeat" type="text" class="form-control loginPsd " placeholder="     请输入密码"
-                           >
+        <div class="loginLogo">
+            <img src="../media/FreedomComposeLogo_Big.png" class="img-fluid" alt="">
+            <div class="loginWhiteFrame">
+                <p class="用户登录字体">用户登录</p>
+                <div class="loginText">
+                    <input  type="text" class="form-control loginUser userIcon" placeholder="请输入用户名">
+                        <div class="loginPsd">
+                            <input  style="  height: 50px;" type="text" class="form-control  psdIcon" placeholder="请输入密码">
+
+                            <a href="#">注册</a> <span> <a href="#" style="position:absolute;right: 0">忘记密码</a></span>
+                        </div>
+
+                    <input type="button" class="btn btn-primary loginBtn" value="登录">
+
+
+
+                </div>
+
+
+
 
             </div>
         </div>
-    </div>
+</div>
 
-    <img  src="../media/loginBackGround.png" class="img-fluid" alt="">
+
+
+
+
 
 </body>
 </html>
