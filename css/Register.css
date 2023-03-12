@@ -1,0 +1,9 @@
+.registerWhiteFrame{
+    border: 3px dashed #d1d0d0;
+    position: relative;
+    z-index: 1;
+    width: 430px;
+    height: 400px;
+    border-radius: 8px;
+    background-color: white;
+}

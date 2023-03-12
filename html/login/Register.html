@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>注册</title>
+    <link rel="shortcut icon" href="../../media/FreedomComposeLogo.ico">
+    <style type="text/css">
+        @import "../../css/bootstrap-css/bootstrap.min.css";
+        @import "../../css/Register.css";
+    </style>
+    <script src="../../JS/bootstrap-js/jquery.min.js"></script>
+    <script src="../../JS/bootstrap-js/bootstrap.min.js"></script>
 </head>
 <body>
-  <h1 style="font-size: 80px">注册界面！</h1>
+  <div>
+     <img style="position: absolute;right: 0;z-index: 0" src="../../media/loginBackGround.png">
+      <div class="registerWhiteFrame">
+          <ul   style="position: absolute;right: 0;z-index: 1">
+              <li class="nav-item">
+                  <input type="text" class="form-control" placeholder="请输入新用户名">
+              </li>
+              <li class="nav-item">
+                  <input type="text" class="form-control" placeholder="请输入密码">
+              </li>
+              <li class="nav-item">
+                  <input type="text" class="form-control" placeholder="请输入确认密码">
+              </li>
+              <li class="nav-item">
+                  <input type="text" class="form-control" placeholder="请输入邮箱">
+              </li>
+
+          </ul>
+          <input type="button" class="btn btn-warning" value="注册" style="width: 100px">
+      </div>
+
+  </div>
 </body>
 </html>
