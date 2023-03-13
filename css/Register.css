@@ -1,9 +1,23 @@
 .registerWhiteFrame{
     border: 3px dashed #d1d0d0;
-    position: relative;
+    position: absolute;
     z-index: 1;
-    width: 430px;
-    height: 400px;
+    margin-top: 7%;
+    width: 50%;
     border-radius: 8px;
     background-color: white;
+   left: 50%;
+    margin-left: -25%;
+}
+.registerBorderControl{
+    margin-top: 50px;
+}
+.registerBtn{
+    margin-left: 35%;
+    width: 300px
+}
+.用户注册{
+    font-size: 60px;
+   margin-left:40%;
+    font-weight: bolder;
 }

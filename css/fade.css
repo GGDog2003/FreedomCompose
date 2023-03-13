@@ -1,7 +1,9 @@
 .div {
     position: absolute;
-    left: 20%;
-    top: 200px;
+    left: 50%;
+    margin-left: -20%;
+    top: 50%;
+    margin-top: -10%;
     height: auto;
     width: auto;
 }
