@@ -9,6 +9,7 @@
         @import "../../css/Register.css";
 
     </style>
+    <script src="../../JS/checkUserInput.js"></script>
 
 <!--    <style type="text/css">-->
 <!--        div{-->
@@ -23,7 +24,7 @@
 <img style="position: absolute;right: 0;z-index: 0" src="../../media/loginBackGround.png">
 
   <div class="container">
-
+      <form action="../../../FreedomCompose_war_exploded/RegisterServlet" method="post">
 
       <div class="container-fluid registerWhiteFrame">
         <div>
@@ -35,36 +36,44 @@
           <br>
             <div >
 
-                <div >
-                    <span>用户名<label style="color: red">*</label></span>
-                    <input type="text" class="form-control" placeholder="请输入新用户名">
-                </div>
 
-                <div class="registerBorderControl">
-                    <span>密码<label style="color: red">*</label></span>
-                    <input type="text" class="form-control " placeholder="请输入密码">
-                </div>
+                    <div >
+                        <span>用户名<label style="color: red">*</label></span>
+                        <input name="registerUserName" type="text" class="form-control" placeholder="请输入新用户名"
+                            oninput="onInputChange();"
+                        >
+                    </div>
 
-                <div class="registerBorderControl">
-                    <span>确认密码<label style="color: red">*</label></span>
-                    <input type="text" class="form-control " placeholder="请输入确认密码">
-                </div>
+                    <div class="registerBorderControl">
+                        <span>密码<label style="color: red">*</label></span>
+                        <input name="registerUserPsd" type="password" class="form-control " placeholder="请输入密码">
+                    </div>
 
-                <div class="registerBorderControl">
-                    <span>邮箱<label style="color: red">*</label></span>
-                    <input type="text" class="form-control " placeholder="请输入邮箱">
-                </div>
+                    <div class="registerBorderControl">
+                        <span>确认密码<label style="color: red">*</label></span>
+                        <input type="password" class="form-control " placeholder="请输入确认密码">
+                    </div>
+
+                    <div class="registerBorderControl">
+                        <span>邮箱<label style="color: red">*</label></span>
+                        <input type="email" class="form-control " placeholder="请输入邮箱" name="registerUserEmail">
+                    </div>
+
+
 
 
             </div>
 
 
 
-          <input type="button" class="btn btn-warning registerBorderControl registerBtn"   value="注册">
+          <input type="button" class="btn btn-warning registerBorderControl registerBtn"
+                 value="注册" id="registerBtn"
+                    onclick="onClickSubmit()"
+          >
             <p></p>
 
       </div>
-
+      </form>
   </div>
 </body>
 </html>

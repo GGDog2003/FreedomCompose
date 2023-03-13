@@ -24,21 +24,24 @@
                 <div class="grayFrame">
 
                 </div>
-                <div class="loginText">
-                    <input  type="text" class="form-control loginUser userIcon" placeholder="请输入用户名">
+                <form action="../../../FreedomCompose_war_exploded/RegisterServlet" method="post">
+                    <div class="loginText">
+                        <input  type="text" class="form-control loginUser userIcon" placeholder="请输入用户名" >
                         <div class="loginPsd">
-                            <input  style="  height: 50px;" type="text" class="form-control  psdIcon" placeholder="请输入密码">
+                            <input  style="  height: 50px;" type="text" class="form-control  psdIcon" placeholder="请输入密码" >
 
                             <a href="Register.html" target="_blank">注册</a> <span> <a href="ForgetPsd.html" target="_blank" style="position:absolute;right: 0">忘记密码</a></span>
                         </div>
-                    <form action="../../src/Java/Login.java" method="get">
-                        <input type="button" class="btn btn-primary loginBtn" value="登录">
-                    </form>
+
+                            <input type="submit" class="btn btn-primary loginBtn" value="登录">
 
 
 
 
-                </div>
+
+                    </div>
+                </form>
+
 
 
 

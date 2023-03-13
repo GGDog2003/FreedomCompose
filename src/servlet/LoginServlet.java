@@ -1,20 +1,20 @@
-package Java;
-import javax.servlet.*;
-import javax.servlet.annotation.WebServlet;
+package servlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-public class Login extends HttpServlet {
+import POJO.User;
+public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
         PrintWriter out= null;
-        try {
+        request.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=utf-8");
             out = response.getWriter();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        out.println("hello servlet Login");
+        String username=request.getParameter("username");
+        String userpsd=request.getParameter("userpsd");
+
+
     }
     protected void doGet(HttpServletRequest request,HttpServletResponse response) throws IOException {
         this.doPost(request,response);
