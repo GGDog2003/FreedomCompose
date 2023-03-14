@@ -8,6 +8,11 @@ public class User {
     {
 
     }
+    public User(String userName,String userPsd){
+        this.userName=userName;
+        this.userPsd=userPsd;
+
+    }
     public User(String userName,String userPsd,String userEmail){
         this.userName=userName;
         this.userPsd=userPsd;

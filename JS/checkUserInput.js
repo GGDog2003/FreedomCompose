@@ -86,6 +86,8 @@ function onInputChange(o){
     if(psd&&ensurePsd&&checkEmail){
        //所有注册条件满足，可以注册
         canRegiste=true;
+    }else{
+        canRegiste=false;
     }
 }
 /*

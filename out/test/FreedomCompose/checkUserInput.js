@@ -1,16 +1,21 @@
-var psd=false;
-var ensurePsd=false;
-var checkEmail=false;
+
+var psd=false;//判断密码是否可行
+var ensurePsd=false;//判断确认密码是否可行
+var checkEmail=false;//判断Email是否可行
 var tempPsd="",tempEnsurePsd="";
-var canRegiste=false;
+var canRegiste=false;//判断整体的输入是否能注册
 /*
-onInputChange用来检测输入密码的格式和两次输入密码是否相同
+onInputChange用来检测各个文本框输入是否符合要求
 2023.03.14 15:52
  */
 function onInputChange(o){
     var ensurePsdLabel=document.getElementById("ensurePsdLabel");
     var psdLab=document.getElementById("psdLabel");
     var emailLab=document.getElementById("registerEmailLabel");
+    /*
+    密码可行：有大小写字幕、数字和特殊字符
+     */
+      //判断此时是否是密码框在输入
       if(o.name==="registerUserPsd"){
           tempPsd=o.value;
          canSubmitPsd(o.value);
@@ -81,10 +86,17 @@ function onInputChange(o){
     if(psd&&ensurePsd&&checkEmail){
        //所有注册条件满足，可以注册
         canRegiste=true;
+    }else{
+        canRegiste=false;
     }
 }
+/*
+onClickSubmit 是返回给注册页面的表单的，用来判断能否进行下一步注册
+若可以，则提交表单给Servlert
+ */
 function onClickSubmit(){
   if(canRegiste){
+
       return true;
   }else{
       return false;
