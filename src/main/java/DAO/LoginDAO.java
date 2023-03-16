@@ -1,0 +1,34 @@
+package DAO;
+
+import POJO.User;
+
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class LoginDAO {
+    Connection connection=null;
+    User user;
+    public LoginDAO(){}
+    public LoginDAO(User user){
+        this.user=user;
+
+    }
+    public boolean LoginCheck() throws SQLException {
+        DAO.DBUtils dbUtils=new DAO.DBUtils();
+        connection=dbUtils.getConection();
+        Statement st = connection.createStatement();
+        String sql =( "SELECT *FROM remoteuser where remoteUserName='"+user.getUserName()+"' and remoteUserPsd='"+
+                user.getUserPsd()+"'");
+
+        ResultSet result=  st.executeQuery(sql);
+       if (result.next()){
+           return true;
+       }else{
+           return false;
+       }
+    }
+
+}

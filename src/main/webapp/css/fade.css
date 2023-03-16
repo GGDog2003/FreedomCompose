@@ -1,0 +1,70 @@
+.div {
+    position: absolute;
+    left: 50%;
+    margin-left: -20%;
+    top: 50%;
+    margin-top: -10%;
+    height: auto;
+    width: auto;
+}
+.nameFont1 {
+    position: relative;
+
+    height: auto;
+    width: auto;
+
+
+}
+
+
+.fadeEnterButton{
+    position: relative;
+    left: 25%;
+    height: auto;
+    width: auto;
+    animation: fadeEnterButton;
+    animation-delay: 1s;
+}
+.fadeInRight {
+    animation: fadeInRight;
+}
+.fadeInLeft {
+    animation: fadeInLeft;
+
+
+}
+
+.OneAnimated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+@keyframes fadeInRight{
+    0% {
+        opacity: 0;
+        transform: translateX(25%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes fadeInLeft{
+    0% {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(40px);
+    }
+}
+@keyframes fadeEnterButton{
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+
+    }
+}
